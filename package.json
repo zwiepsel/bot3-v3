@@ -1,0 +1,39 @@
+{
+  "name": "pancakeswap-trading-bot",
+  "version": "0.0.1",
+  "description": "A simple mempool sniper bot 🤖",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "pm2": "pm2 start run.sh --watch -n trading-bot && pm2 logs trading-bot --lines 1000",
+    "logs": "pm2 logs trading-bot --lines 1000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zwiepsel/testbot"
+  },
+  "keywords": [
+    "pancakeswap",
+    "mempool",
+    "bot",
+    "ido"
+  ],
+  "author": "Coen Oude Luttikhuis",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "@types/web3": "^1.2.2",
+    "abi-decoder": "^2.4.0",
+    "axios": "^0.26.1",
+    "bignumber.js": "^9.0.1",
+    "dotenv": "^10.0.0",
+    "ethereum-input-data-decoder": "^0.3.5",
+    "ethers": "^5.1.4",
+    "pg": "^8.7.3",
+    "pm2": "^5.1.1",
+    "telegraf": "^4.7.0",
+    "typescript": "^4.4.3",
+    "web3": "^1.5.2",
+    "winston": "^3.3.3"
+  }
+}
